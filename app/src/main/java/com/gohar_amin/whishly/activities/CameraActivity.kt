@@ -58,7 +58,7 @@ class CameraActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.N)
     private fun setUpModel() {
         ModelRenderable.builder()
-                .setSource(this,1)
+                .setSource(this,R.raw.sceneform_plane_shadow_material)
                 .build()
                 .thenAccept {
                     model=it
